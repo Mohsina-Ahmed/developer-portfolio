@@ -4,8 +4,33 @@ body {
 
 }
 
+@keyframes sliding {
+    0% {
+        background-color: aqua;
+        top: 0;
+    }
+
+    100% {
+        background-color: blue;
+        top: 700px;
+    }
+
+}
+
+.ball {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation: sliding 1s ease-in-out 0.5s 20 alternate;
+    animation-play-state: running;
+
+}
+
 h1 {
     font-size: 50px;
+    margin-top: 2px;
 
 }
 
@@ -25,10 +50,21 @@ h2 {
     width: 50%;
     padding-left: 5%;
     padding-bottom: 5%;
+
 }
 
 .half-width img {
     width: 70%;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+    transition: transform 2s;
+}
+
+.img-hover1:hover {
+    transform: scale(1.5) rotate(60deg);
+    transition: transform 2s;
 }
 
 .link-button {
@@ -38,6 +74,7 @@ h2 {
     color: white;
     font-weight: 700;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .top-banner {
