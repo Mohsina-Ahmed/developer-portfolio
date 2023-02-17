@@ -63,8 +63,8 @@ h2 {
 }
 
 .img-hover1:hover {
-    transform: scale(1.5) rotate(60deg);
-    transition: transform 2s;
+    transform: scale(1.3) rotate(60deg);
+    transition: transform 5s;
 }
 
 .link-button {
